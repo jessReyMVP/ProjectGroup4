@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Bean & Bloom Coffee</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<style>
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin-top: 0px;
+  }
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffdd57;
+    text-decoration: none;
+  }
+  .menu-links {
+    list-style: none;
+    display: flex;
+  }
+  .menu-links li {
+    margin-left: 20px;
+  }
+  .menu-links a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* Banner Image */
+  .banner-image {
+    width: 100%;
+    height: 300px;
+    background-image: url('asset/background2.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  /* Contact Information Section */
+  .contact-info {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  .contact-info h2 {
+    font-size: 32px;
+    color: #ffdd57;
+    margin-bottom: 10px;
+  }
+  .contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  /* Social Media Links */
+  .social-links {
+    margin-top: 20px;
+  }
+  .social-links a {
+    margin: 0 10px;
+    color: #ffdd57;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .social-links a:hover {
+    color: #fff;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  .contact-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .contact-form button:hover {
+    background-color: #555;
+  }
+
+  /* Media Query */
+  @media screen and (max-width: 650px) {
+    .navbar, .contact-info, .contact-form {
+      padding: 0px;
+    }
+    .banner-image {
+      height: 200px;
+      font-size: 24px;
+    }
+  }
+</style>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="logo">Bean & Bloom<span> Coffee</span></a>
+    <ul class="menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="gallery.html">Our Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Banner Image -->
+<div class="banner-image">
+  Get in Touch with Us
+</div>
+
+<!-- Contact Information Section -->
+<div class="contact-info">
+  <h2>Contact Us</h2>
+  <p>Email: info@beanandbloom.com</p>
+  <p>Phone: (123) 456-7890</p>
+  <p>Address: 123 Coffee Lane, Brewtown, CA 90210</p>
+
+  <!-- Social Media Links -->
+  <div class="social-links">
+    <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+    <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+    <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+  </div>
+</div>
+
+<!-- Contact Form -->
+<div class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form action="submit_form.php" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

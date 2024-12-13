@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bean & Bloom Coffee</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #333;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffdd57;
+      text-decoration: none;
+    }
+    .menu-links {
+      list-style: none;
+      display: flex;
+    }
+    .menu-links li {
+      margin-left: 20px;
+    }
+    .menu-links a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-image: url('asset/background2.jpg'); /* Use your desired image */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 230px 0;
+      text-align: center;
+      height: 150%;
+      width: 100%;
+    }
+    .hero-section h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero-section h4 {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    .hero-section button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #333;
+      background-color: #ffdd57;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Product Section */
+    .product-section {
+      background-color: #3a3838;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .product-section h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #f4f4f4;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: left;
+    }
+    .product-card img {
+      width: 100%;
+      height: 60%;
+    }
+    .product-info {
+      padding: 20px;
+    }
+    .product-info h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .product-info p {
+      font-size: 16px;
+      color: #777;
+    }
+    .product-info .price {
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .product-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .product-buttons button {
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+      width: 48%;
+      border-radius: 4px;
+    }
+    .product-buttons button:hover {
+      background-color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-card {
+        width: 70%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">Bean & Bloom<span> Coffee</span></a>
+      <ul class="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="gallery.html">Our Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="content">
+      <h1>Start Your Day with A Fresh Coffee</h1>
+      <h4>"Coffee, beverage brewed from the roasted and ground seeds of the tropical evergreen coffee plants."</h4>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <h2>Our Products</h2>
+    <div class="product-container">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="asset/essp.png" alt="Espresso">
+        <div class="product-info">
+          <h3>Espresso</h3>
+          <p>Rich and bold espresso, a classic favorite.</p>
+          <p class="price">$3.99</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="asset/s536437545457436846_p61_i3_w1920.webp" alt="Latte">
+        <div class="product-info">
+          <h3>Latte</h3>
+          <p>Creamy latte with smooth, velvety foam.</p>
+          <p class="price">$4.99</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="asset/Product_photography_a_cup_of_cappuccino_coffee_black_2ff2b98e-1978-4799-9e9f-046330bdee41_3.webp" alt="Cappuccino">
+        <div class="product-info">
+          <h3>Cappuccino</h3>
+          <p>Perfectly balanced cappuccino with rich froth.</p>
+          <p class="price">$4.50</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <img src="asset/latte-small.jpg" alt="Caffe Latte">
+        <div class="product-info">
+          <h3>Caffe Latte</h3>
+          <p>Delicious and smooth with a rich coffee flavor.</p>
+          <p class="price">$5.50</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <img src="asset/iced coffee.webp" alt="Iced Coffee">
+        <div class="product-info">
+          <h3>Iced Coffee</h3>
+          <p>Cold and refreshing coffee for a hot day.</p>
+          <p class="price">$3.99</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="product-card">
+        <img src="asset/Mocha-1fc71f7.png" alt="Mocha">
+        <div class="product-info">
+          <h3>Mocha</h3>
+          <p>Sweet chocolate and coffee combination.</p>
+          <p class="price">$4.75</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="asset/caramel-topped-ice-cream-dessert-600x600.jpg" alt="caramel-topped ice cream">
+        <div class="product-info">
+          <h3>caramel-topped ice cream</h3>
+          <p>Ice cream cake is the perfect frozen dessert with fudge.</p>
+          <p class="price">$4.75</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="asset/strawberry Panna-Cotta-1.jpg" alt="strawberry">
+        <div class="product-info">
+          <h3>Strawberry Panna-Cotta</h3>
+          <p>Panna cotta is a light and silky custard-like dessert.</p>
+          <p class="price">$4.75</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="asset/No-bake-chocolate-hazelnut-dessert-in-a-glass-1-2.jpg" alt="Hazelnut">
+        <div class="product-info">
+          <h3>Chocolate Hazelnut</h3>
+          <p>combination of chocolate and hazelnuts.</p>
+          <p class="price">$4.75</p>
+          <div class="product-buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

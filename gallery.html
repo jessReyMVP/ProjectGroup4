@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Gallery</title>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #0a0909;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+  }
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffdd57;
+    text-decoration: none;
+  }
+  .menu-links {
+    list-style: none;
+    display: flex;
+  }
+  .menu-links li {
+    margin-left: 20px;
+  }
+  .menu-links a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* Gallery section styling */
+  .gallery-section {
+    padding: 70px 0;
+    text-align: center;
+    background-color: #332c2c;
+  }
+
+  .gallery-section h1 {
+    font-size: 2em;
+    margin-bottom: 8px;
+    color: #ffdd57;
+    padding: 50px;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 3 20px;
+  }
+
+  .gallery-item {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 4px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: #ffdd57;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .footer-links li {
+    margin: 0 15px;
+  }
+  .footer-links a {
+    color: #ffdd57;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: #fff;
+  }
+  .footer-text {
+    font-size: 14px;
+    color: #ccc;
+  }
+</style>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">Bean & Bloom <span>Coffee</span></a>
+      <ul class="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="gallery.html">Our Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="gallery-section">
+    <h1>Our Gallery</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="asset/interior-basics.jpg" alt="Coffee Image 1"></div>
+      <div class="gallery-item"><img src="asset/iced coffee.webp" alt="Coffee Image 2"></div>
+      <div class="gallery-item"><img src="asset/essp.png" alt="Coffee Image 3"></div>
+      <div class="gallery-item"><img src="asset/Product_photography_a_cup_of_cappuccino_coffee_black_2ff2b98e-1978-4799-9e9f-046330bdee41_3.webp" alt="Coffee Image 4"></div>
+      <div class="gallery-item"><img src="asset/caramel-topped-ice-cream-dessert-600x600.jpg" alt="Coffee Image 5"></div>
+      <div class="gallery-item"><img src="asset/s536437545457436846_p61_i3_w1920.webp" alt="Coffee Image 6"></div>
+      <div class="gallery-item"><img src="asset/caffe-espresso-940x625.jpg" alt="Coffee Image 7"></div>
+      <div class="gallery-item"><img src="asset/strawberry Panna-Cotta-1.jpg" alt="Coffee Image 8"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+      <p class="footer-text">&copy; 2025 Bean & Bloom Coffee. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
